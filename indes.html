@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Judul Halaman</title>
-        <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        
-    </style>
-    </head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contoh Kotak dengan Judul, Gambar, dan Deskripsi Panjang di Tengah</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: antiquewhite; 
+    }
+    .container {
+        width: 80%;
+        margin: 50px auto;
+        border: 2px solid #333;
+        padding: 20px;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        background-color: white; 
+    }
+    h1 {
+        margin-top: 0;
+        font-size: 24px;
+        text-align: center;
+    }
+    .gambar {
+        float: none; /* Menghapus float sebelumnya */
+        text-align: center; /* Mengatur gambar menjadi pusat */
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+    .deskripsi {
+        display: flex;
+        flex-direction: column;
+    }
+    .p1 {
+        font-size: 18px;
+        color: blue; 
+        margin-bottom: 10px;
+    }
+    .p2 {
+        font-size: 18px;
+        color: black; 
+        text-align: justify;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Praktikum PDW 2023</h1>
+        <div class="deskripsi">
+            <p class="p1">Deskripsi :</p>
+            <p class="p2">Universitas Muhammadiyah Yogyakarta merupakan institusi perkuliahan yang Unggul dan Islami dan telah dilengkapi dengan sistem perkuliahan yang berkemajuan dan bertaraf internasional untuk menunjang masa depan Anda, serta kehidupan kampus yang telah dirancang seimbang guna menghasilkan lulusan yang unggul dalam teknologi namun tetap berlandaskan nilai-nilai keislaman.</p>
+        </div>
+    </div>
+    <div class="gambar">
+        <img src="Logo_umy.jpg" alt="Gambar">
+    </div>
+</body>
+</html>
