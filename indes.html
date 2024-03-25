@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contoh Kotak dengan Judul, Gambar, dan Deskripsi Panjang di Tengah</title>
 <style>
-    body {
+   
+   body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
@@ -13,8 +14,8 @@
         background-color: antiquewhite; 
     }
     .container {
-        width: 80%;
-        margin: 50px auto;
+        width: 900px;
+        margin: 0 auto; /* Mengatur margin atas dan bawah ke auto untuk pemisahan */
         border: 2px solid #333;
         padding: 20px;
         display: flex; 
@@ -23,12 +24,11 @@
         background-color: white; 
     }
     h1 {
-        margin-top: 0;
+        margin-top: 50px; /* Menambah margin atas pada judul */
         font-size: 24px;
         text-align: center;
     }
     .gambar {
-        float: none; /* Menghapus float sebelumnya */
         text-align: center; /* Mengatur gambar menjadi pusat */
     }
     img {
@@ -38,8 +38,7 @@
         margin: 20px auto;
     }
     .deskripsi {
-        display: flex;
-        flex-direction: column;
+        text-align: center; /* Mengatur deskripsi menjadi pusat */
     }
     .p1 {
         font-size: 18px;
@@ -51,18 +50,33 @@
         color: black; 
         text-align: justify;
     }
+    .tombol {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .tombol:hover {
+        background-color: #ddd;
+    }
 </style>
 </head>
 <body>
+    <h1>Exercise 1 PDW</h1> <!-- Pindahkan judul di luar dari kontainer -->
     <div class="container">
-        <h1>Praktikum PDW 2023</h1>
         <div class="deskripsi">
             <p class="p1">Deskripsi :</p>
-            <p class="p2">Universitas Muhammadiyah Yogyakarta merupakan institusi perkuliahan yang Unggul dan Islami dan telah dilengkapi dengan sistem perkuliahan yang berkemajuan dan bertaraf internasional untuk menunjang masa depan Anda, serta kehidupan kampus yang telah dirancang seimbang guna menghasilkan lulusan yang unggul dalam teknologi namun tetap berlandaskan nilai-nilai keislaman.</p>
+            <p class="p2"></p>
         </div>
     </div>
     <div class="gambar">
-        <img src="Logo_umy.jpg" alt="Gambar">
+        <img src="Cat.jpg" alt="Gambar">
+    </div>
+    <div style="text-align: center;"> <!-- Membuat container untuk tombol -->
+        <button class="tombol">Button</button>
     </div>
 </body>
 </html>
